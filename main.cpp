@@ -22,21 +22,32 @@ void calculateFactorials(int start, int end, int num, std::vector<unsigned long 
 
 int main() {
     int numThreads;
-    std::cout << "Enter the number of threads: ";
-    //Проверка корректности введенных данных
-    if (!(std::cin >> numThreads) || numThreads <= 0) {
-        std::cerr << "Invalid input for number of threads. Please enter a positive integer." << std::endl;
-        return 1;
+    while (true) {
+        std::cout << "Enter the number of threads: ";
+        // Проверка на корректный ввод, обработка ошибок
+        if (!(std::cin >> numThreads) || numThreads <= 0) {
+            std::cerr << "Invalid input for number of threads. Please enter a positive integer." << std::endl;
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        } else {
+            break;
+        }
     }
 
     int number;
-    std::cout << "Enter the number to calculate factorial: ";
-    //Проверка корректности введенных данных
-    if (!(std::cin >> number) || number < 0) {
-        std::cerr << "Invalid input for number to calculate factorial. Please enter a non-negative integer." << std::endl;
-        return 1;
+    while (true) {
+        std::cout << "Enter the number to calculate factorial: ";
+        // Проверка на корректный ввод, обработка ошибок
+        if (!(std::cin >> number) || number < 0) {
+            std::cerr << "Invalid input for number to calculate factorial. Please enter a non-negative integer." << std::endl;
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        } else {
+            break;
+        }
     }
 
+ 
     std::vector<std::thread> threads(numThreads);
     std::vector<unsigned long long> results(number + 1, 0);
 
@@ -69,3 +80,4 @@ int main() {
 
     return 0;
 }
+
