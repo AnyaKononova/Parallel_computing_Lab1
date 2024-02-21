@@ -21,11 +21,7 @@
 3. Проверка на успешное создание и присоединение потоков.
 
 #### Пример работы программы
-![image](https://github.com/AnyaKononova/Parallel_computing_Lab1/assets/82609324/8e04d26d-ee7f-4c73-a67f-22670d821315)
-![image](https://github.com/AnyaKononova/Parallel_computing_Lab1/assets/82609324/8c57e671-244a-4183-8a67-4784577e811e)
-
-![image](https://github.com/AnyaKononova/Parallel_computing_Lab1/assets/82609324/b59d4b78-a5b5-4b4d-9070-2f94b481b5b8)
-![image](https://github.com/AnyaKononova/Parallel_computing_Lab1/assets/82609324/6ada6173-ffb1-4296-aaa6-f56689c0efb9)
+![image](https://github.com/AnyaKononova/Parallel_computing_Lab1/assets/82609324/32b8d206-7525-42bb-8737-d871c05db1de)
 
 ### Заключение
 Программа позволяет эффективно вычислять факториал больших чисел с помощью многопоточности, что может ускорить процесс вычислений, это может быть полезно при работе с большими числами и требовательными вычислениями. Обработка ошибок и контроль над созданием и завершением потоков делает программу более надежной и удобной в использовании. 
